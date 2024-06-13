@@ -3,7 +3,7 @@ import Button from "./Button";
 
 function Form() {
   return (
-    <form name="apply" method="POST" data-netlify="true">
+    <form name="contact" method="POST" data-netlify="true">
       <div className="mb-8 grid gap-6 lg:grid-cols-2">
         <div className="space-y-2">
           <label className="block text-xl text-darkGray" htmlFor="full-name">
