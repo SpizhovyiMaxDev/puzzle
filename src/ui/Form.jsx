@@ -3,7 +3,12 @@ import Button from "./Button";
 
 function Form() {
   return (
-    <form name="contact" method="POST" data-netlify="true">
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      action="/success" // Redirect to this page after successful submission
+    >
       <div className="mb-8 grid gap-6 lg:grid-cols-2">
         <div className="space-y-2">
           <label className="block text-xl text-darkGray" htmlFor="full-name">
@@ -38,7 +43,7 @@ function Form() {
             Comment
           </label>
           <textarea
-            placeholder="Leave youe comment here.."
+            placeholder="Leave your comment here.."
             id="comment"
             name="comment"
             className="w-full rounded-md px-4 py-2 text-base focus:outline-none focus:ring focus:ring-primaryTransparent sm:text-lg"
