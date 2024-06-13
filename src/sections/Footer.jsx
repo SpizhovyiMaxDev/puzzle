@@ -1,7 +1,7 @@
 import Logo from "../ui/Logo";
-import NavItem from "../ui/NavItem";
+import FooterNav from "../ui/FooterNav";
 import SocialMediaLinks from "../ui/SocialMediaLinks";
-import { footerLinks } from "../data/footer";
+import { footerData } from "../data/footer";
 
 function Footer() {
   function disableClick(e) {
@@ -23,8 +23,8 @@ function Footer() {
           </p>
         </div>
 
-        {footerLinks.map((section) => (
-          <NavItem
+        {footerData.map((section) => (
+          <FooterNav
             key={section.title}
             title={section.title}
             links={section.links}

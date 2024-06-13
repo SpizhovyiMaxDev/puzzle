@@ -1,5 +1,5 @@
 
-export const footerLinks = [
+export const footerData = [
     {
       title: "Make money with us",
       links: [

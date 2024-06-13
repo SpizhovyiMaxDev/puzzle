@@ -1,6 +1,4 @@
-import React from "react";
-
-const NavItem = ({ title, links }) => {
+function FooterNav({ title, links }) {
   return (
     <nav className="space-y-2 leading-[2]">
       <p className="text-lg font-semibold">{title}</p>
@@ -19,6 +17,6 @@ const NavItem = ({ title, links }) => {
       </ul>
     </nav>
   );
-};
+}
 
-export default NavItem;
+export default FooterNav;
