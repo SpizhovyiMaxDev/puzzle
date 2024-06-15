@@ -21,6 +21,7 @@ export default {
         /*-- App Break points --*/
         'proud-xs':'358px',
         'product-md':'868px',
+        'feature-lg':'969px'
       
     },
     fontFamily: {

@@ -30,7 +30,7 @@ function Proud() {
         {fetcher.state === "loading" ? (
           <Loader />
         ) : (
-          <ul className="grid gap-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          <ul className="grid gap-2 md:gap-8 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             {proudList?.map((product) => (
               <Item key={product.id} product={product} />
             ))}
@@ -46,7 +46,7 @@ function Proud() {
       </div>
 
       <div className="max-w-customLg mx-auto">
-        <ul className="grid grid-cols-1 gap-16 xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+        <ul className="grid grid-cols-1  gap-12 feature-lg:gap-16 xs:grid-cols-2 sm:grid-cols-3 feature-lg:grid-cols-4">
           {features.map((feature) => (
             <FeatureItem feature={feature} key={feature.id} />
           ))}

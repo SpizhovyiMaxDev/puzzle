@@ -18,6 +18,7 @@ function Item({ product }) {
     >
       <div className="w-full h-56 relative mb-2">
         <img
+          loading="lazy"
           src={product.image}
           alt={product.title}
           className="absolute max-h-44 max-w-full left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]"
