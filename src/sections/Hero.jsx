@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 function Hero() {
   return (
     <section
-      className="flex min-h-screen items-center mt-32"
+      className="flex min-h-screen items-center mt-24"
       style={{
         backgroundImage: 'url("/backgrounds/hero.webp")',
         backgroundRepeat: "no-repeat",
