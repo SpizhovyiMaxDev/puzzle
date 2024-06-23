@@ -15,7 +15,7 @@ function Footer() {
         onClick={disableClick}
       >
         <div className="flex flex-col gap-4">
-          <Logo className="footer-logo" />
+          <Logo />
           <SocialMediaLinks />
           <p className="mt-auto">
             Copyright &copy;{new Date().getFullYear()} by Pizzle, Inc.

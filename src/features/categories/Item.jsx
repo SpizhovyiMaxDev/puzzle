@@ -16,18 +16,18 @@ function Item({ product }) {
       }
       className="cursor-pointer p-4 border border-stone-300 hover:border-stone-600 transition-all"
     >
-      <div className="w-full h-56 relative mb-2">
+      <div className="h-44 mb-8 flex items-center justify-center overflow-hidden">
         <img
           loading="lazy"
           src={product.image}
           alt={product.title}
-          className="absolute max-h-44 max-w-full left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]"
+          className="max-h-full max-w-full"
         />
       </div>
 
-      <strong className="mb-4 text-lg xs:text-xl">
+      <span className="mb-2 text-lg xs:text-xl block font-bold">
         {formatCurrency(product.price)}
-      </strong>
+      </span>
       <p className="text-sm xs:text-base">
         {reduceAmountOfText(formatTitle(product.title), 3)}
       </p>

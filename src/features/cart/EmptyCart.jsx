@@ -5,7 +5,7 @@ function EmptyCart() {
         <img
           src="./app-icons/empty-cart.webp"
           alt="Empty cart"
-          className="w-96 h-auto"
+          className="h-54 max-w-full"
         />
         <div className="p-6">
           <h2 className="text-lg sm:text-xl font-semibold text-gray-800 text-center sm:text-left mb-2">

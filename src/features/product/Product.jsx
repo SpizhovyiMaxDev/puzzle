@@ -20,7 +20,7 @@ function Product() {
     : `${reduceAmountOfText(capitalizedDescription, 20)}...`;
 
   return (
-    <section className="px-4 pt-32 min-h-[80vh]">
+    <section className="px-4 mt-32 mb-12 min-h-[80vh]">
       <div className="max-w-customSm mx-auto flex gap-3 mb-14">
         <Link to="/" className="text-lg">
           Home
@@ -36,11 +36,11 @@ function Product() {
       </div>
 
       <div className="max-w-customSm mx-auto grid grid-cols-1 product-md:grid-cols-2 relative items-stretch">
-        <div className="relative h-80 sm:h-113 w-full mb-8">
+        <div className="h-80 sm:h-113 w-full mb-8 flex justify-center items-center">
           <img
             src={product.image}
             alt={product.title}
-            className="max-h-72 max-w-72 absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]"
+            className="max-h-72 max-w-72"
           />
         </div>
 

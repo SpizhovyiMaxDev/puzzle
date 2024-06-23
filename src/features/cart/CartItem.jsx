@@ -10,11 +10,11 @@ import DeleteItem from "./DeleteItem";
 function CartItem({ product }) {
   return (
     <li className="grid gap-8 grid-cols-1 py-8 sm:grid-cols-[1fr_3fr] lg:grid-cols-[1fr_3fr_2fr] items-stretch">
-      <div className="min-h-60 w-full relative">
+      <div className="min-h-60 w-full flex items-center justify-center">
         <img
           src={product.image}
           alt={product.title}
-          className="max-h-44 max-w-full absolute top-[50%] translate-x-[-50%] left-[50%] translate-y-[-50%]"
+          className="max-h-64 max-w-full"
         />
       </div>
       <div>
@@ -27,7 +27,7 @@ function CartItem({ product }) {
         </p>
 
         <p className="text-semibold mb-4 font-semibold text-xl block lg:hidden">
-          <span className="font-medium">Total Price:</span>{" "}
+          <span className="font-medium">Total Price:</span>
           {formatCurrency(product.totalPrice)}
         </p>
 
@@ -35,6 +35,7 @@ function CartItem({ product }) {
           {capitalizeFirstLetter(reduceAmountOfText(product.description, 15))}
           ...
         </p>
+
         <div className="flex items-center gap-4">
           <UpdateItemQuantity productId={product.id} />
           <DeleteItem productId={product.id} type="outline">
